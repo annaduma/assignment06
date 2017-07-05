@@ -15,6 +15,7 @@ function getLondon () {
   getWeather(apiURL + "?lat=" + londonLat + "&lon=" + londonLon + "&APPID=" + api)
 }
 
+
 function getWeather(url) {
   let request = new XMLHttpRequest()
 
