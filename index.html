@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Open Weather</title>
+  </head>
+  <body>
+
+    <h1>Check Your Weather!</h1>
+
+    <button type="button" onclick="getSeattle()">Seattle</button>
+
+    <button type="button" onclick="getLondon()">London</button>
+
+    <div id="weather"></div>
+
+    <script type="text/javascript" src="api.js"></script>
+
+  </body>
+
+</html>
+
+<!--
+Create a website featuring two buttons labeled Seattle and London
+When clicked, fire an xmlHttpRequest that fetches the current conditions for the city, based on latitude and longitude
+london: { lat: 51.5074, lon: 0.1278},
+seattle: { lat: 47.6762, lon: -122.3182 }
+Use the response JSON data to write weather information to the DOM
+API Docs are here: http://openweathermap.org/current (Links to an external site.)Links to an external site.
+ (Links to an external site.)Links to an external site.Push your code to Github and publish it as a Github Pages site -->
