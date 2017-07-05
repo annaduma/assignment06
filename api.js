@@ -25,16 +25,6 @@ function myWeather (position) {
   getWeather(apiURL + "?lat=" + position.coords.latitude + "&lon=" + position.coords.longitude + "&APPID=" + api)
 }
 
-
-// navigator.geolocation.getCurrentPosition(function(position) {
-//   myWeather(position.coords.latitude, position.coords.longitude);
-// })
-
-// function myWeather (position) {
-//   navigator.geolocation.getCurrentPosition(myWeather)
-//   getWeather(apiURL + "?lat=" + position.coords.latitude + "&lon=" + position.coords.longitude + "&APPID=" + api)
-// }
-
 function getWeather(url) {
   let request = new XMLHttpRequest()
 
