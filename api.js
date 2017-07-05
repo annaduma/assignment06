@@ -15,6 +15,25 @@ function getLondon () {
   getWeather(apiURL + "?lat=" + londonLat + "&lon=" + londonLon + "&APPID=" + api)
 }
 
+function getLocation() {
+  if (navigator.geolocation) {
+    navigator.geolocation.getCurrentPosition(myWeather)
+  }
+}
+
+function myWeather (position) {
+  getWeather(apiURL + "?lat=" + position.coords.latitude + "&lon=" + position.coords.longitude + "&APPID=" + api)
+}
+
+
+// navigator.geolocation.getCurrentPosition(function(position) {
+//   myWeather(position.coords.latitude, position.coords.longitude);
+// })
+
+// function myWeather (position) {
+//   navigator.geolocation.getCurrentPosition(myWeather)
+//   getWeather(apiURL + "?lat=" + position.coords.latitude + "&lon=" + position.coords.longitude + "&APPID=" + api)
+// }
 
 function getWeather(url) {
   let request = new XMLHttpRequest()
@@ -28,7 +47,7 @@ function getWeather(url) {
     let response = (JSON.parse(request.response))
     console.log(response.wind.speed)
 
-    weatherDiv.innerHTML = ("Today's forecast shows " + response.weather[0].main + "." + " It will be " + (response.main.temp - 273.15).toFixed(1) + " degrees Celsius, with up to " + response.main.humidity + "% humidity." + " Your location is expecting winds up to " + response.wind.speed + "km/h.")
+    weatherDiv.innerHTML = ("Today's forecast shows " + response.weather[0].main + "." + " It will be " + (response.main.temp - 273.15).toFixed(1) + " degrees Celsius, with up to " + response.main.humidity + "% humidity." + " Your location is expecting winds of up to " + response.wind.speed + "km/h.")
   }
 
   request.onerror = function (errorObj) {
