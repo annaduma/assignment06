@@ -37,7 +37,7 @@ function getWeather(url) {
     let response = (JSON.parse(request.response))
     console.log(response.wind.speed)
 
-    weatherDiv.innerHTML = ("Today's forecast shows " + response.weather[0].main + "." + " It will be " + (response.main.temp - 273.15).toFixed(1) + " degrees Celsius, with up to " + response.main.humidity + "% humidity." + " Your location is expecting winds of up to " + response.wind.speed + "km/h.")
+    weatherDiv.innerHTML = ("Temperature: " + (response.main.temp - 273.15).toFixed(1) + " degrees Celsius.<br>" +  "Today's forecast: " + response.weather[0].main + "<br>" + "Description: " + response.weather[0].description + "<br>" + "Humidity: " + response.main.humidity + "%<br>" + "Wind: " + response.wind.speed + "km/h.")
   }
 
   request.onerror = function (errorObj) {
