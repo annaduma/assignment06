@@ -16,9 +16,7 @@ function getLondon () {
 }
 
 function getLocation() {
-  if (navigator.geolocation) {
     navigator.geolocation.getCurrentPosition(myWeather)
-  }
 }
 
 function myWeather (position) {
