@@ -1,3 +1,31 @@
+/*
+Error: Invalid CSS after "...ort "variables"": expected selector or at-rule, was ".seattlebutton {"
+        on line 4 of C:\Users\anna_\Desktop\foundations\html-300\assignment06\weather.scss
 
+1: @import "variables"
+2: 
+3: 
+4: .seattlebutton {
+5:   color: 'seattlebut'
+6: }
 
-/*# sourceMappingURL=weather.css.map */
+Backtrace:
+C:\Users\anna_\Desktop\foundations\html-300\assignment06\weather.scss:4
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.23/lib/sass/scss/parser.rb:1207:in `expected'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.23/lib/sass/scss/parser.rb:1137:in `expected'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.23/lib/sass/scss/parser.rb:42:in `parse'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.23/lib/sass/engine.rb:406:in `_to_tree'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.23/lib/sass/engine.rb:381:in `_render_with_sourcemap'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.23/lib/sass/engine.rb:298:in `render_with_sourcemap'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.23/lib/sass/exec/sass_scss.rb:391:in `run'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.23/lib/sass/exec/sass_scss.rb:63:in `process_result'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.23/lib/sass/exec/base.rb:52:in `parse'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.23/lib/sass/exec/base.rb:19:in `parse!'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.23/bin/sass:13:in `<top (required)>'
+C:/Program Files (x86)/Koala/bin/sass:18:in `load'
+C:/Program Files (x86)/Koala/bin/sass:18:in `<main>'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: Invalid CSS after \"...ort \"variables\"\": expected selector or at-rule, was \".seattlebutton {\"\A         on line 4 of C:\Users\anna_\Desktop\foundations\html-300\assignment06\weather.scss\A \A 1: @import \"variables\"\A 2: \A 3: \A 4: .seattlebutton {\A 5:   color: 'seattlebut'\A 6: }"; }
