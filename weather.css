@@ -2,17 +2,31 @@ html {
   font: normal normal 16px/1.4 Helvetica, sans-serif; }
 
 body {
-  background-color: #FFF8DC; }
+  background-color: #FFFAFA; }
 
-.buttons .seattlebutton {
+.seattlebutton {
   color: #CD5C5C;
   margin: 0 2rem 2rem; }
-.buttons .londonbutton {
+  .seattlebutton:hover, .seattlebuttonfocus {
+    background-color: #FFE4E1; }
+  .seattlebutton:active {
+    background-color: #FFF0F5; }
+
+.londonbutton {
   color: #228B22;
   margin: 0 2rem 2rem; }
-.buttons .weatherbutton {
+  .londonbutton:hover, .londonbuttonfocus {
+    background-color: #FFE4E1; }
+  .londonbutton:active {
+    background-color: #FFF0F5; }
+
+.weatherbutton {
   color: #9932CC;
   margin: 0 2rem 2rem; }
+  .weatherbutton:hover, .weatherbuttonfocus {
+    background-color: #FFE4E1; }
+  .weatherbutton:active {
+    background-color: #FFF0F5; }
 
 .weatherDiv {
   margin: 0 2rem 2rem; }

@@ -7,25 +7,48 @@ html {
 body {
   background-color: $bodybackground;
 }
-.buttons {
 
 
+.seattlebutton {
+  color: $seattlebtn;
+  margin: $margins;
 
-  .seattlebutton {
-    color: $seattlebtn;
-    margin: $margins;
+  &:hover,
+  &focus {
+    background-color: $hoverfocus;
   }
 
-  .londonbutton {
-    color: $londonbtn;
-    margin: $margins;
+  &:active {
+    background-color: $active;
+  }
+}
+
+.londonbutton {
+  color: $londonbtn;
+  margin: $margins;
+
+  &:hover,
+  &focus {
+    background-color: $hoverfocus;
   }
 
-  .weatherbutton {
-    color: $weatherbtn;
-    margin: $margins;
+  &:active {
+    background-color: $active;
+  }
+}
+
+.weatherbutton {
+  color: $weatherbtn;
+  margin: $margins;
+
+  &:hover,
+  &focus {
+    background-color: $hoverfocus;
   }
 
+  &:active {
+    background-color: $active;
+  }
 }
 
 .weatherDiv {
