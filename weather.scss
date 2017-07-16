@@ -1,6 +1,41 @@
-@import "variables"
+@import "variables";
+
+html {
+  font: normal normal 16px/1.4 Helvetica, sans-serif;
+}
+
+body {
+  background-color: $bodybackground;
+}
+.buttons {
 
 
-.seattlebutton {
-  color: 'seattlebut'
+
+  .seattlebutton {
+    color: $seattlebtn;
+    margin: $margins;
+  }
+
+  .londonbutton {
+    color: $londonbtn;
+    margin: $margins;
+  }
+
+  .weatherbutton {
+    color: $weatherbtn;
+    margin: $margins;
+  }
+
+}
+
+.weatherDiv {
+  margin: $margins;
+}
+
+button {
+  background-color: $btnbackground;
+}
+
+h1 {
+  margin: $margins;
 }
