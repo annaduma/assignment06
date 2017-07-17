@@ -2,11 +2,35 @@ html {
   font: normal normal 16px/1.4 Helvetica, sans-serif; }
 
 body {
-  background-color: #FFFAFA; }
+  background-color: #becde5; }
+
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: 1px solid black;
+  padding: 2rem; }
+
+.weatherDiv {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
 
 .seattlebutton {
   color: #CD5C5C;
-  margin: 0 2rem 2rem; }
+  margin: 2rem 2rem; }
   .seattlebutton:hover, .seattlebuttonfocus {
     background-color: #FFE4E1; }
   .seattlebutton:active {
@@ -14,7 +38,7 @@ body {
 
 .londonbutton {
   color: #228B22;
-  margin: 0 2rem 2rem; }
+  margin: 2rem 2rem; }
   .londonbutton:hover, .londonbuttonfocus {
     background-color: #FFE4E1; }
   .londonbutton:active {
@@ -22,20 +46,20 @@ body {
 
 .weatherbutton {
   color: #9932CC;
-  margin: 0 2rem 2rem; }
+  margin: 2rem 2rem; }
   .weatherbutton:hover, .weatherbuttonfocus {
     background-color: #FFE4E1; }
   .weatherbutton:active {
     background-color: #FFF0F5; }
 
 .weatherDiv {
-  margin: 0 2rem 2rem; }
+  margin: 2rem 2rem; }
 
 button {
   background-color: #E6E6FA; }
 
 h1 {
-  margin: 0 2rem 2rem; }
+  margin: 2rem 2rem; }
 
 .photo-seattle {
   background-image: url("/images/seattle.png"); }

@@ -8,6 +8,23 @@ body {
   background-color: $bodybackground;
 }
 
+.heading {
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid black;
+  padding: 2rem;
+}
+
+.weatherDiv {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  // background-color: $mainheading;
+}
 
 .seattlebutton {
   color: $seattlebtn;
