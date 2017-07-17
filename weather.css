@@ -37,4 +37,13 @@ button {
 h1 {
   margin: 0 2rem 2rem; }
 
+.photo-seattle {
+  background-image: url("/images/seattle.png"); }
+
+.photo-london {
+  background-image: url("/images/london.png"); }
+
+.photo-local {
+  background-image: url("/images/local.png"); }
+
 /*# sourceMappingURL=weather.css.map */

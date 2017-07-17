@@ -62,3 +62,9 @@ button {
 h1 {
   margin: $margins;
 }
+
+@each $city in $list {
+  .photo-#{$city} {
+    background-image: url('/images/#{$city}.png')
+    }
+}
